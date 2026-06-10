@@ -1,3 +1,16 @@
+# Node (Expo)
+node_modules/
+.expo/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
 later_ver_serv.py
-__pycache__
 Построение системы бронирования ReactNative.pdf

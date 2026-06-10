@@ -1,10 +1,19 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from datetime import datetime, timedelta
+from fastapi import Request
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.base import BaseHTTPMiddleware
+
+class NgrokMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        response = await call_next(request)
+        response.headers["ngrok-skip-browser-warning"] = "69420"
+        return response
 
 app = FastAPI()
 
+app.add_middleware(NgrokMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
