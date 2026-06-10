@@ -314,25 +314,11 @@ pydantic>=2.9.0
 
 # 🖼 Скриншоты
 
-## Главный экран
-
-```text
-docs/screenshots/main-screen.png
-```
-
-## Экран бронирований
-
-```text
-docs/screenshots/bookings-screen.png
-```
-
-После добавления изображений:
-
-```md
+### Главный экран
 ![Главный экран](docs/screenshots/main-screen.png)
 
+### Мои бронирования
 ![Мои бронирования](docs/screenshots/bookings-screen.png)
-```
 
 ---
 
