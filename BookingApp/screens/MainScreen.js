@@ -8,8 +8,9 @@ import {
 } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 import { Ionicons } from '@expo/vector-icons';
+import Constants from 'expo-constants';
 
-const API_URL = 'https://could-unhook-bullion.ngrok-free.dev';
+const API_URL = Constants.expoConfig?.extra?.API_URL;
 
 export default function MainScreen({ navigation, route }) {
   // Передаём bookedDates через параметры или получаем из глобального состояния
