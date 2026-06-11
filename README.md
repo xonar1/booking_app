@@ -84,22 +84,6 @@ booking_app/
 
 ---
 
-# ⚙️ Переменные окружения
-
-Создайте файл `.env` внутри директории `server`.
-
-```env
-PORT=8000
-```
-
-При необходимости можно добавить:
-
-```env
-DATABASE_URL=...
-SECRET_KEY=...
-```
-
----
 
 # 🚀 Запуск сервера
 
@@ -134,13 +118,7 @@ pip install -r requirements.txt
 Если используется FastAPI:
 
 ```bash
-uvicorn main:app --reload
-```
-
-или
-
-```bash
-python main.py
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Сервер будет доступен по адресу:
